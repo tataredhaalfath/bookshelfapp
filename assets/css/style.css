@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+.head_bar {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.input_section > h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.input_section > form > .input {
+  margin: 8px 0;
+}
+
+.input_section > form > button {
+  background-color: rgb(17, 64, 153);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.input_section > form > .input > label {
+  color: #fff;
+  font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+  color: #fff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.search_section {
+  margin: 16px 0;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.form_search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_search > h2 {
+  color: #fff;
+}
+
+.form_search > form {
+  padding: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
+}
+
+.form_search > form > label {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.form_search > form > input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.form_search > form > button {
+  background-color: #14279b;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search_section > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.search_section > .book_list > .book_item > h3,
+p {
+  margin: 8px 0;
+}
+
+.book_shelf {
+  margin: 16px 0 0 0;
+  border: 1px solid black;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.book_shelf > h2 {
+  color: #fff;
+}
+
+.book_shelf > .book_list {
+  padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3,
+p {
+  margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search_section > .book_list > .book_item > .action button {
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  float: right;
+  margin-top: -100px;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  line-height: 20px;
+}
+.search_section > .book_list > .book_item > .action > .red {
+  background-color: red;
+  color: white;
+}
+hr {
+  color: yellow !important;
+}
+.book_shelf > .book_list > .book_item > .action > .green {
+  background-color: green;
+  color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+  background-color: red;
+
+  color: white;
+}
+
+.input_section {
+  background-color: rgb(15, 140, 223);
+}
+.search_section {
+  background-color: cornflowerblue;
+}
+.book_shelf {
+  background-color: cornflowerblue;
+}
+.search_section #searchBookList .book_item {
+  background-color: #fb9300;
+  color: beige;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.search_section #searchBookList .complete {
+  background-color: #3db2ff;
+  color: beige;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.book_shelf #incompleteBookshelfList .book_item {
+  background-color: #fb9300;
+  color: beige;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.book_shelf #completeBookshelfList .book_item {
+  background-color: #3db2ff;
+  color: beige;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+}
